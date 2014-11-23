@@ -4,7 +4,6 @@ module Api
 
     def create
       @list = current_board.lists.new(list_params)
-
       if @list.save
         render json: @list
       else

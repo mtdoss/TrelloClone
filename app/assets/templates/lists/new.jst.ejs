@@ -1,0 +1,18 @@
+<h4>New List</h4>
+<form>
+<% if (board) { %>
+   <input type="hidden"
+           name="list[board_id]"
+           value="<%= board.escape("id") %>">
+<% }; %>
+
+<input type="hidden"
+           name="list[ord]"
+           value="1">
+  <label>
+    List title
+    <input type="text" name="list[title]"></input>
+  </label>
+
+  <input type="submit">
+</form>

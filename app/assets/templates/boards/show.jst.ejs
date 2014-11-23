@@ -1,7 +1,5 @@
 <h1> <%= board.escape('title') %></h1>
 
-<ul>
-  <% board.lists().each(function(list) { %>
-    <li><%= list.escape('title') %></li>
-  <% }) %>
-</ul>
+<ul class="lists"></ul>
+<div class="new-list"></div>
+<a href="#/">Back to index</a>

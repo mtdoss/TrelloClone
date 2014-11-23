@@ -17,8 +17,8 @@ TrelloClone.Routers.Router = Backbone.Router.extend({
 			collection: boards
 		});
     
-		this.$rootEl.html(indexView.render().$el)
-		// this._swapView(indexView);
+		// this.$rootEl.html(indexView.render().$el)
+		this._swapView(indexView);
 	},
 
 
