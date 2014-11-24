@@ -15,3 +15,21 @@
 
 @import "bootstrap";
 @import "font-awesome";
+
+.lists div{
+	background: lightgray;
+	font-weight: bold;
+	float: left;
+	width: 100px;
+	height: 200px;
+	margin: 20px;
+}
+
+.board a{
+	background: lightgray;
+	font-weight: bold;
+	float: left;
+	width: 100px;
+	height: 200px;
+	margin: 20px;	
+}

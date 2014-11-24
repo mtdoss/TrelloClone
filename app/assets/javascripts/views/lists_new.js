@@ -17,7 +17,8 @@ TrelloClone.Views.ListsNew = Backbone.View.extend({
     event.preventDefault();
     var params = $(event.currentTarget).serializeJSON();
     var newList = new TrelloClone.Models.List(params["list"]);
-
+    newOrd = this.model.lists().length;
+    newList.set({ ord: newOrd }) //this is probably not a great way to do this (on submit)
     newList.save({}, {
       success: function() {
         view.model.lists().add(newList);
