@@ -1,0 +1,15 @@
+<form>
+<% if (list) { %>
+   <input type="hidden"
+           name="card[list_id]"
+           value="<%= list.escape("id") %>">
+<% }; %>
+
+
+  <label>
+    Card title
+    <input type="text" name="card[title]"></input>
+  </label>
+
+  <input type="submit">
+</form>
